@@ -1,0 +1,134 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;900&display=swap');
+/*==================== VARIABLES CSS ====================*/
+:root{
+    --border: 1px solid hsl(100, 100%, 100%);
+    /*========== Colors ==========*/
+    --background-color: hsl(0, 0%, 0%);
+    --text-color: 	hsl(0, 0%, 90%);
+    --second-text: 	hsl(0, 0%, 51%);
+
+    /*========== Fonts ==========*/
+    --nrm-font-size: 30px;
+    --big-font-size: 40px;
+    --headings-font-weight: 900;
+    --text-font-weight: 300;
+
+    /*========== Size ==========*/
+    --margin-top: 25%;
+    --padd: 10%;
+}
+/*==================== DEFAULT ====================*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--background-color);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3, a{
+    color: var(--text-color);
+}
+
+/*==================== MAIN ====================*/
+.main-pic{
+    margin-top: var(--margin-top);
+    background-image: url('../images/WGI.png');
+    background-size: cover;
+    padding: 45%;
+}
+.slogan{
+    font-size: var(--big-font-size);
+    margin-top: var(--margin-top);
+    padding: var(--padd);
+    line-height: 2.5;
+}
+#lighter{
+    font-weight: var(--text-font-weight);
+    color: var(--second-text);
+}
+i{
+    color: var(--text-color);
+}
+.menu-bar{
+    margin-top: var(--padd);
+    display: flex;
+}
+.text, .icon{
+    /* border: var(--border); */
+    font-size: var(--nrm-font-size);
+    padding: var(--padd);
+}
+.text{
+    margin-right: 8%;
+}
+.uil-search{
+    padding-left: 200%;
+}
+/*==================== PICTURE ====================*/
+.home-pic{
+    /* border: var(--border); */
+    background-image: url(../images/WGI.png);
+    background-size: cover;
+    padding-top: 60%;
+    margin: 0% 15% 0% 15%;
+}
+/*==================== HOME MENU ====================*/
+.menu-btns{
+    margin-top: var(--padd);
+    padding: var(--padd);
+}
+.btn-1{
+    font-size: var(--nrm-font-size);
+    font-weight: var(--headings-font-weight);
+    margin-bottom: var(--padd);
+    width: 100%;
+    padding: 5%;
+    border-radius: 10px;
+}
+.btn-1 a{
+    color: var(--background-color);
+}
+/*==================== SONGS ====================*/
+#songs{
+    font-size: 22px;
+    padding: 5% 10% 5% 10%;
+    display: flex;
+}
+.uil-music{
+    padding-right: 5%;
+    font-size: var(--nrm-font-size);
+}
+
+
+/*==================== RESPONSIVE ====================*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (phone and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
